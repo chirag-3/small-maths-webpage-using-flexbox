@@ -1,36 +1,47 @@
-body{
-  background: linear-gradient(black,white);
-  background: -o-linear-gradient(black,white);
-  background: -webkit-linear-gradient(black,white);
-  background: -moz-linear-gradient(black,white);
+*{
+  box-sizing:border-box;
 }
- #outer
+body, html{
+  margin:0px;
+  padding:0px;
+}
+
+ #container
 {
-  /* width:1050px; */
+  width:90%;
+  margin:0px auto;
   border-style:solid;
   border-color:black;
   border-width:1px 1px;
-  /* margin:0px auto; */
-  margin:0px 150px;
-  /* height:950px; */
+  /* height:100vh; */
+  display:flex;
+  flex-direction:column;
 }
 
-#header a
+.header{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+
+#brand a
 {
    color:white;
    text-decoration:none;
+   /* flex:50%; */
 }
 
-#header
+#brand
 {
-  color:red;
-  text-align:center;
+  /* color:red; */
+  /* text-align:center; */
+  padding-left:5px;
   border-style:solid;
   border-color:black;
   border-width:1px 1px;
-  float:left;
-  margin-top:10px;
-  margin-left:20px;
+  flex:1 0 300px;
+  /* flex:50%; */
   background: linear-gradient(to right,orange,blue,white);
   background: -o-linear-gradient(to right,orange,blue,white);
   background: -moz-linear-gradient(to right,orange,blue,white);
@@ -39,32 +50,38 @@ body{
 
 #searchbox
 {
+
+  padding:20px 0px;
+  /* flex:1 0 50%; */
+  flex:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+#form_1{
   border-style:solid;
   border-color:black;
   border-width:1px 1px;
-  float:right;
-  width: 300px;
-  margin-right:80px;
-  margin-top:30px;
-  padding:20px 0px;
-    background: linear-gradient(to left,orange,blue,white);
-    background: -webkit-linear-gradient(to left,orange,blue,white);
-    background: -o-linear-gradient(to left,orange,blue,white);
-    background: -moz-linear-gradient(to left,orange,blue,white);
+  background: linear-gradient(to left,orange,blue,white);
+  background: -webkit-linear-gradient(to left,orange,blue,white);
+  background: -o-linear-gradient(to left,orange,blue,white);
+  background: -moz-linear-gradient(to left,orange,blue,white);
+  padding:8px;
 }
-
 
 #search
 {
   margin-left:20px;
-  float:left;
+  /* float:left; */
   height:30px;
   background: white url(images/LogoMakr-3xRGir.png) no-repeat right center;
 }
 #press
 {
    margin-right:40px;
-   float:right;
+   /* float:right; */
    height:30px;
    width:50px;
 }
@@ -72,7 +89,7 @@ body{
 #list{
   /* clear:both; */
   border:1px black solid;
-  height:60px;
+  /* height:60px; */
   margin-top:20px;
   /* padding: 7px 7px; */
   /* background-color:yellow; */
@@ -80,12 +97,16 @@ body{
   background:-webkit-linear-gradient(to right,yellow,white,orange);
   background:-moz-linear-gradient(to right,yellow,white,orange);
   background:-o-linear-gradient(to right,yellow,white,orange);
-}
-.clear{
-  clear:both;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
-#list ul li a{
+
+#list a{
   text-decoration:none;
   color:red;
   transition:font-size 0.5s ease;
@@ -97,22 +118,29 @@ body{
 
 }
 
-#list ul li a:hover{
+#list a:hover{
   color:black;
   font-size:32px;
 }
 
-#list ul li:last-child{
+#list :last-child{
   border-right:none;
 }
-#list ul li{
-  list-style:none;
-  float:left;
+#list a{
   margin-right: 30px;
   border-right:1px green solid;
   padding-right:20px;
 }
 
+@media screen and (max-width: 700px){
+    #list{
+        flex-direction: column;
+        align-content: center;
+    }
+    #list a{
+        border-right: none;
+    }
+}
 
 #content{
   border:1px black solid;
@@ -128,6 +156,12 @@ body{
 #content p{
   margin-left:25px;
   margin-right:25px;
+}
+
+.sidebar{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:30px;
 }
 
 .sidebars ul{
@@ -162,6 +196,7 @@ body{
   float:left;
   margin-left:50px;
   margin-top:30px;
+  margin-right:50px;
   width:460px;
   background:linear-gradient(to right,orange,yellow);
   -webkit-background:linear-gradient(to right,orange,yellow);
@@ -173,6 +208,7 @@ body{
   border:1px black solid;
   border-radius:3px;
   float:right;
+  margin-left:50px;
   margin-right:50px;
   margin-top:30px;
   width:460px;
@@ -183,7 +219,7 @@ body{
 }
 
 #footer{
-  margin-top:30px;
+  margin-top:auto;
   /* padding-left:40px; */
   background:linear-gradient(to right,orange,white,yellow);
   -webkit-background:linear-gradient(to right,orange,white,yellow);
