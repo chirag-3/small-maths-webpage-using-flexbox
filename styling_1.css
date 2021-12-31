@@ -1,0 +1,20 @@
+#content{
+  /* border:1px black solid; */
+  margin:0px 100px;
+  height:630px;
+}
+
+#content h2{
+  text-transform:uppercase;
+  color:white;
+}
+
+
+#content ol li{
+  margin-bottom:20px;
+  color:red;
+}
+
+body{
+  background:linear-gradient(black,white);
+}

@@ -1,0 +1,195 @@
+body{
+  background: linear-gradient(black,white);
+  background: -o-linear-gradient(black,white);
+  background: -webkit-linear-gradient(black,white);
+  background: -moz-linear-gradient(black,white);
+}
+ #outer
+{
+  /* width:1050px; */
+  border-style:solid;
+  border-color:black;
+  border-width:1px 1px;
+  /* margin:0px auto; */
+  margin:0px 150px;
+  /* height:950px; */
+}
+
+#header a
+{
+   color:white;
+   text-decoration:none;
+}
+
+#header
+{
+  color:red;
+  text-align:center;
+  border-style:solid;
+  border-color:black;
+  border-width:1px 1px;
+  float:left;
+  margin-top:10px;
+  margin-left:20px;
+  background: linear-gradient(to right,orange,blue,white);
+  background: -o-linear-gradient(to right,orange,blue,white);
+  background: -moz-linear-gradient(to right,orange,blue,white);
+  background: -webkit-linear-gradient(to right,orange,blue,white);
+}
+
+#searchbox
+{
+  border-style:solid;
+  border-color:black;
+  border-width:1px 1px;
+  float:right;
+  width: 300px;
+  margin-right:80px;
+  margin-top:30px;
+  padding:20px 0px;
+    background: linear-gradient(to left,orange,blue,white);
+    background: -webkit-linear-gradient(to left,orange,blue,white);
+    background: -o-linear-gradient(to left,orange,blue,white);
+    background: -moz-linear-gradient(to left,orange,blue,white);
+}
+
+
+#search
+{
+  margin-left:20px;
+  float:left;
+  height:30px;
+  background: white url(images/LogoMakr-3xRGir.png) no-repeat right center;
+}
+#press
+{
+   margin-right:40px;
+   float:right;
+   height:30px;
+   width:50px;
+}
+
+#list{
+  /* clear:both; */
+  border:1px black solid;
+  height:60px;
+  margin-top:20px;
+  /* padding: 7px 7px; */
+  /* background-color:yellow; */
+  background:linear-gradient(to right,yellow,white,orange);
+  background:-webkit-linear-gradient(to right,yellow,white,orange);
+  background:-moz-linear-gradient(to right,yellow,white,orange);
+  background:-o-linear-gradient(to right,yellow,white,orange);
+}
+.clear{
+  clear:both;
+}
+
+#list ul li a{
+  text-decoration:none;
+  color:red;
+  transition:font-size 0.5s ease;
+  -ms-transition:font-size 0.5s ease;
+  -moz-transition:font-size 0.5s ease;
+  -webkit-transition:font-size 0.5s ease;
+  -o-transition:font-size 0.5s ease;
+  /* transition:color 0.5s ease; */
+
+}
+
+#list ul li a:hover{
+  color:black;
+  font-size:32px;
+}
+
+#list ul li:last-child{
+  border-right:none;
+}
+#list ul li{
+  list-style:none;
+  float:left;
+  margin-right: 30px;
+  border-right:1px green solid;
+  padding-right:20px;
+}
+
+
+#content{
+  border:1px black solid;
+  /* height:40px; */
+  margin-top:20px;
+  background-color:#e3f709;
+}
+
+#content h1{
+  margin-left:20px;
+}
+
+#content p{
+  margin-left:25px;
+  margin-right:25px;
+}
+
+.sidebars ul{
+  list-style:none;
+  text-transform:uppercase;
+}
+
+.sidebars li{
+  margin:10px 30px;
+  background:url(images/arrow.png) no-repeat left center;
+  padding-left:40px;
+  margin:20px 0px;
+}
+
+.sidebars ul li a{
+  text-decoration:none;
+  transition:font-size 0.5s ease;
+  -ms-transition:font-size 0.5s ease;
+  -moz-transition:font-size 0.5s ease;
+  -o-transition:font-size 0.5s ease;
+  -webkit-transition:font-size 0.5s ease;
+}
+
+.sidebars ul li a:hover{
+  font-size:35px;
+  color:black;
+}
+
+ #leftsidebar{
+  border:1px black solid;
+  border-radius:3px;
+  float:left;
+  margin-left:50px;
+  margin-top:30px;
+  width:460px;
+  background:linear-gradient(to right,orange,yellow);
+  -webkit-background:linear-gradient(to right,orange,yellow);
+  -moz-background:linear-gradient(to right,orange,yellow);
+  -o-background:linear-gradient(to right,orange,yellow);
+}
+
+ #rightsidebar{
+  border:1px black solid;
+  border-radius:3px;
+  float:right;
+  margin-right:50px;
+  margin-top:30px;
+  width:460px;
+  background:linear-gradient(to left,orange,yellow);
+  -webkit-background:linear-gradient(to left,orange,yellow);
+  -moz-background:linear-gradient(to left,orange,yellow);
+  -o-background:linear-gradient(to left,orange,yellow);
+}
+
+#footer{
+  margin-top:30px;
+  /* padding-left:40px; */
+  background:linear-gradient(to right,orange,white,yellow);
+  -webkit-background:linear-gradient(to right,orange,white,yellow);
+  -moz-background:linear-gradient(to right,orange,white,yellow);
+  -o-background:linear-gradient(to right,orange,white,yellow);
+  /* clear:both; */
+  /* height:30px; */
+  padding:10px 0px 10px 40px;
+}
